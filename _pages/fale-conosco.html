@@ -1,47 +1,132 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
 
-[AQUI ENTRA UMA FOTO]
+<head>
+    <title>Tudo sobre o google glass</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../_css/estilo.css">
+    <link rel="stylesheet" href="../_css/fotos.css">
+    <script language="JavaScript" src="../_js/funcoes.js"></script>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+</head>
+<body>
+<div id="interface">
+    <header id="cabecalho">
+        <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <img id="icone" src="../_imagens/fotos.png"/>
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul >
+                <li onmouseover="mudaFoto('../_imagens/home.png')" onmouseout="mudaFoto('../_imagens/contato.png')"><a href="../index.html">Home</a></li>
+                <li onmouseover="mudaFoto('../_imagens/especificacoes.png')" onmouseout="mudaFoto('../_imagens/contato.png')"><a href="_pages/specs.html">Especificações</a> </li>
+                <li onmouseover="mudaFoto('../_imagens/fotos.png')" onmouseout="mudaFoto('../_imagens/contato.png')"><a href="_pages/fotos.html">Fotos</a> </li>
+                <li onmouseover="mudaFoto('../_imagens/multimidia.png')" onmouseout="mudaFoto('../_imagens/contato.png')"><a href="_pages/multimidia.html">Multimídia</a> </li>
+                <li onmouseover="mudaFoto('../_imagens/contato.png')" onmouseout="mudaFoto('../_imagens/contato.png')"><a href="_pages/fale-conosco.html">Fale conosco</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="corpo-full">
+        <article id="artigo-principal">
+            <header id="header-cabecalho">
+                <hgroup>
+                    <h3>Fale conosco/ Contato</h3>
+                    <h2>por Everton Ribeiro</h2>
+                    <h3>Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
+        </article>
+    </section>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+<form method="post" id="fContato" action="mailto:everton.nrb@hotmail.com">
+    <fieldset id="usuario">
+        <legend>Identificação do Usuário</legend>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+                <p><label for="cNome">Nome:</label> <input type="text" id="cNome" name="tNome" size="40" maxlength="30" placeholder="Nome completo"> </p>
+                <p><label for="cSenha">Senha:</label> <input type="password" id="cSenha" name="tSenha" size="20" maxlength="15" > </p>
+                <p><label for="cEmail">E-mail:</label> <input type="email" id="cEmail" name="tEmail" size="40" maxlength="30" placeholder="exemple@example.com"> </p>
+                <fieldset id="sexo">
+                    <legend>
+                        Sexo:
+                        <input type="radio" name="tSexo" id="cMasc" checked> <label for="cMasc">Masculino</label>
+                        <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label>
+                    </legend>
+                </fieldset>
+                Data de Nascimento:<input type="date" id="cNasc" name="tNasc">
+    </fieldset>
+    
+    <fieldset id="endereco">
+        <legend>Endereço do Usuário</legend>
+        <p> <label for="cRua"></label> Logradouro: <input type="text" id="cRua" name="tRua" size="40" maxlength="40" placeholder="rua, lagradouro, av ..."> </p>
+        <p> <label for="cNumero"> Número:</label> <input type="number" id="cNumero" name="tNumero" size="10" min="0" max="9999"></p>
+        <p><label for="cEstado"> Estado: </label>
+            <select name="tEstado" id="cEstado">
+                <option>
+                <option selected value="0">Selecione o Estado</option>
+                <option value="ac">Acre</option>
+                <option value="al">Alagoas</option>
+                <option value="ap">Amapá</option>
+                <option value="am">Amazonas</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+                <option value="df">Distrito Federal</option>
+                <option value="es">Espirito Santo</option>
+                <option value="go">Goiás</option>
+                <option value="ma">Maranhão</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="pa">Pará</option>
+                <option value="pb">Paraíba</option>
+                <option value="pr">Paraná</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="ro">Rondônia</option>
+                <option value="rr">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="sp">São Paulo</option>
+                <option value="se">Sergipe</option>
+                <option value="to">Tocantins</option>
+                </option>
+            </select>
+        </p>
+        <p> <label for="cCidade"> Cidade:</label> <input type="text" id="cCidade" name="tCidade" size="40" maxlength="40" placeholder="Sua cidade" list="cidades"> </p>
+        <datalist id="cidades">
+            <option value="Rio de janeiro"></option>
+            <option value="Niteroi"></option>
+            <option value="Queimados"></option>
+        </datalist>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+    </fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+    <fieldset id="mensagem">
+        <legend>Mensagem do Usuário</legend>
+        <p><label for="cUrgencia">Grau de Urgência:</label></p>
+        <input type="range" name="tUrgencia" id="cUrgencia" min="0" max="10">
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+        <p> <label for="cMsg"> Mensagem:</label>
+            <textarea name="tMsg" id="cMsg" cols=55" rows="5" placeholder="Digite sua mensagem"></textarea>
+        </p>
+    </fieldset>
 
+    <fieldset id="pedido">
+        <legend>Quero um Google Glass</legend>
+        Gostaria de adquirir um Google Glass quando disponível
+        Cor:
+        Quantidade:
+        Preço Total: R$
+    </fieldset>
 
-[BOTÃO ENVIAR]
-
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+        [BOTÃO ENVIAR]
+</form>
+    <footer id="roda-pe">
+        <p>Copyright &copy; 2013 - by Everton Ribeiro <br><a href="http://facebook.com" target="_blank">Facebook</a> | <a href="http://www.twitter.com" target="_blank">Twitter</a> </p>
+    </footer>
+</div>
+</body>
+</html>
