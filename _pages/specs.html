@@ -1,23 +1,61 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
 
-[AQUI ENTRA UMA FOTO]
+<head>
+    <title>Tudo sobre o google glass</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../_css/estilo.css">
+    <link rel="stylesheet" href="../_css/specs.css">
+    <script language="JavaScript" src="../_js/funcoes.js"></script>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+</head>
+<body>
+<div id="interface">
+    <header id="cabecalho">
+        <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <img id="icone" src="_imagens/glass-oculos-preto-peq.png"/>
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul >
+                <li onmouseover="mudaFoto('../_imagens/home.png')" onmouseout="mudaFoto('../_imagens/especificacoes.png')"><a href="../index.html">Home</a></li>
+                <li onmouseover="mudaFoto('../_imagens/especificacoes.png')" onmouseout="mudaFoto('../_imagens/especificacoes.png')"><a href="_pages/specs.html">Especificações</a> </li>
+                <li onmouseover="mudaFoto('../_imagens/fotos.png')" onmouseout="mudaFoto('../_imagens/especificacoes.png')"><a href="_pages/fotos.html">Fotos</a> </li>
+                <li onmouseover="mudaFoto('../_imagens/multimidia.png')" onmouseout="mudaFoto('../_imagens/especificacoes.png')"><a href="_pages/multimidia.html">Multimídia</a> </li>
+                <li onmouseover="mudaFoto('../_imagens/contato.png')" onmouseout="mudaFoto('../_imagens/especificacoes.png')"><a href="_pages/fale-conosco.html">Fale conosco</a> </li>
+            </ul>
+        </nav>
+    </header>
+<section id="corpo-full">
+    <article id="artigo-principal">
+        <header id="header-cabecalho">
+            <hgroup>
+                <h3>Glass > Especificações</h3>
+                <p>Raio-X no Google Glass</p>
+                <h2>por Everton Ribeiro</h2>
+                <h3>Atualizado em 01/Maio/2013</h3>
+            </hgroup>
+        </header>
+        Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer           ponto     vermelho vai te levar a um lugar cheio de novas informações.
 
-Glass > Especificações
-Raio-X no Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+        <section id="conteudo">
+            <img src="../_imagens/glass-esquema-marcado.jpg" usemap="#meu_mapa">
+            <map name="meu_mapa">
+                <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela"/>
+                <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela">
+                <area shape="circle" coords="73,52,12" href="google-glass.html#gatgets" target="janela">
+                <area shape="poly" coords="28,143,83,216,84,294,27,169" href="google-glass.html#sensores" target="janela">
+            </map>
+            <iframe src="../_pages/google-glass.html" name="janela" id="frame_specs"></iframe>
+        </section>
 
-Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
-
-[AQUI ENTRA UMA IMAGEM]
-
-Copyright 2013 - by Gustavo Guanabara<
-Facebook | Twitter
+    </article>
+</section>
+            <footer id="roda-pe">
+                <p>Copyright &copy; 2013 - by Everton Ribeiro <br><a href="http://facebook.com" target="_blank">Facebook</a> | <a href="http://www.twitter.com" target="_blank">Twitter</a> </p>
+            </footer>
+</div>
+</body>
+</html>

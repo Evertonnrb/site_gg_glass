@@ -7,12 +7,21 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
 
 body{
+    font-family: Arial,sans-serif;
     background-color: #dddddd;
     color:rgba(0,0,0,1);
 }
 p{
     text-align: justify;
     text-indent: 50px;
+}
+a{
+    color: #606060;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
 }
 /*Formatação da interface*/
 div#interface{
@@ -117,8 +126,70 @@ nav#menu h1{
      transition: background-color .1s;
  }
 
-    /*Estilazação da estrutura da pagina*/
+    /*formatação do article*/
+article#artigo-principal h1{
+    font-size: 12pt;
+    color: dimgrey;
+    background-color: #cacaca;
+    padding: 5px 0 5px 0px;
+    margin: 10px 0px 10px 0px;
+}
 
+/*cabecalho*/
+
+header#header-cabecalho h1{
+    font-family: font-logo;
+    font-size: 20pt;
+    color: #606060;
+}
+header#header-cabecalho h2{
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    color: #606060;
+}
+header#header-cabecalho h3{
+    font-size: 12px;
+    color: #cacaca;
+}
+
+    /*Estilização da tabela de especificacão*/
+
+table#tabela_spec{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tabela_spec td{
+    border: 1px solid #cacaca;
+    padding: 10px;
+    text-align: left;
+}
+
+
+    /*Classes*/
+
+table#tabela_spec td.ce{
+    color: #fff;
+    background-color: dimgrey;
+    vert-align: top;
+    font-weight: bold;
+}
+
+table#tabela_spec td.cd{
+    background-color: #cecece;
+}
+ table#tabela_spec caption{
+     color: #888;
+     font-size: 17pt;
+     font-weight: bolder;
+ }
+ table#tabela_spec span{
+     font-size: 8pt;
+     margin-left: 20px;
+ }
+
+    /*Estilazação da estrutura da pagina*/
 section#corpo{
     display: block;
     width: 550px;
@@ -131,6 +202,19 @@ aside#lateral{
     width: 430px;
     float: right;
 }
+aside#lateral h1{
+    font-family: font-logo;
+    font-size: 20pt;
+    color: #606060;
+    background-color: #cacaca;
+}
+aside#lateral h2{
+    background-color: #888888;
+    font-size: 12pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
 footer#roda-pe{
     clear: both;/*Alinha a divisao dos conteudos limpando*/
     border-top:1px solid #606060;
